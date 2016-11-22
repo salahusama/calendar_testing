@@ -1,6 +1,6 @@
 function check() {
 	if ( getCookie("name") != "undefined" ) {
-		window.open(".\other\home.html", "_self");
+		window.open("./other/home.html", "_self");
 	}
 }
 
