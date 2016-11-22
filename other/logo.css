@@ -1,0 +1,22 @@
+img {
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 1;
+    width: 10vh;
+    margin-top: 4vh;
+    margin-left: 10vh;
+    border-radius: 50%;
+}
+
+@keyframes logo {
+    0%   {left:10vh; top: 5vh; transform: rotate(360deg);}
+    100% {left:10vh; top: 5vh; transform: rotate(0deg);}
+}
+.logo:hover {
+    transform: scale(.9);
+}
+.logo {
+    transition: .5s;
+}

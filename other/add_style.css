@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+	overflow: hidden;
+}
+canvas {
+	float: left;
+	cursor: pointer;
+}
+div {
+	float: top;
+	background-color: #990000;
+	padding: 30px;
+}
+input {
+	height: 30px;
+	border-radius: 5px;
+	font-size: 20px;
+	outline: none;
+	width: 30%;
+	transition: .4s;
+}
+input[type="text"]:focus {
+	box-shadow: 0 0 15px black;
+	transform: scale(1.07);
+}
+input[type="submit"] {
+	height: 30px;
+	width: 30px;
+	border-radius: 5px;
+	font-size: 20px;
+	outline: none;
+}
+input[type="submit"]:hover {
+	box-shadow: 0 0 10px black;
+	transform: scale(1.15);
+}
+span {
+	color: white;
+	float: right;
+	font-family: sans-serif;
+	font-size: 15px;
+}

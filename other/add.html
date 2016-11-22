@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title id="title">Today's date</title>
+
+	<script src="add_fxn.js"></script>
+	<link rel="stylesheet" type="text/css" href="add_style.css">
+
+</head>
+
+<body onload="setup()">
+	<div>
+		<input type="text" id="new" onkeydown = "if (event.keyCode == 13) document.getElementById('btn').click()"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="submit" id="btn" value="+" onclick="fromInput()"/>
+
+		<span>refresh page if not working</span>
+	</div>
+	<canvas id="myCanvas" width="1365px" height="570px"></canvas>
+
+</body>
+</html>

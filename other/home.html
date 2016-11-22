@@ -1,0 +1,128 @@
+<head>
+	<title>Organiser</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<link rel="stylesheet" type="text/css" href="button.css">
+	<link rel="stylesheet" type="text/css" href="table.css">
+	<link rel="stylesheet" type="text/css" href="logo.css">
+	<script src="functions.js"></script>
+
+</head>
+
+<body onload="setup()">
+	<section class="left">
+		<section class="logo">
+			<img src="circle_art.jpg">
+		</section>
+
+		<div class="tasks">
+			<ul id="today">
+				<!---->
+			</ul>
+		</div>
+	</section>
+
+
+	<section class="right">
+		<div class="container">
+			<br/>
+			<h1 class="greating">Hello </h1> <h1 id="hello" class="greating"></h1> &nbsp;
+			<button id="edit" onclick="edit_name()">&#9998;</button>
+			<br/>
+			<br/>
+			
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#home">Month</a></li>
+				<li><a data-toggle="tab" href="#menu1" onclick="day_setup()">Day</a></li>
+			</ul>
+			
+			<div class="tab-content">
+
+				<div id="home" class="tab-pane fade in active">
+					<br/>
+					<button class="prev" onclick="prev()" style="float: left"><span>prev</span></button>
+					<button class="next" onclick="next()" style="float: right"><span>next</span></button>
+					<h3 id="month_display" style="text-align: center;">"Month"</h3>
+
+					<table border="1">
+						<tr>
+							<th>Mon</th> <th>Tue</th> <th>Wed</th> <th>Thur</th> <th>Fri</th> <th>Sat</th> <th>Sun</th>
+						</tr>
+
+						<tr>
+							<td id="1"></td>
+							<td id="2"></td>
+							<td id="3"></td>
+							<td id="4"></td>
+							<td id="5"></td>
+							<td id="6"></td>
+							<td id="7"></td>
+						</tr>
+
+						<tr>
+							<td id="8" ></td>
+							<td id="9" ></td>
+							<td id="10"></td>
+							<td id="11"></td>
+							<td id="12"></td>
+							<td id="13"></td>
+							<td id="14"></td>
+						</tr>
+
+						<tr>
+							<td id="15"></td>
+							<td id="16"></td>
+							<td id="17"></td>
+							<td id="18"></td>
+							<td id="19"></td>
+							<td id="20"></td>
+							<td id="21"></td>
+						</tr>
+
+						<tr>
+							<td id="22"></td>
+							<td id="23"></td>
+							<td id="24"></td>
+							<td id="25"></td>
+							<td id="26"></td>
+							<td id="27"></td>
+							<td id="28"></td>
+						</tr>
+
+						<tr>
+							<td id="29"></td>
+							<td id="30"></td>
+							<td id="31"></td>
+							<td id="32"></td>
+							<td id="33"></td>
+							<td id="34"></td>
+							<td id="35"></td>
+						</tr>
+
+						<tr>
+							<td id="36"></td>
+							<td id="37"></td>
+						</tr>
+					</table>
+				</div>
+
+				<div id="menu1" class="tab-pane fade">
+					<br/>
+					<button class="prev" onclick="day_prev()" style="float: left"><span>prev</span></button>
+					<button class="next" onclick="day_next()" style="float: right"><span>next</span></button>
+					<h3 id="day_date" style="text-align: center">"Date"</h3>
+					<button id="day_current" onclick="day_today()">Today</button>
+					
+					<ul id="list">
+						<!---->
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</section>
+</body>
+</html>
